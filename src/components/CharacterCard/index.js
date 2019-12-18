@@ -9,4 +9,4 @@ const CharacterCard = props => (
   </div>
 );
 
-export default PictureCard;
+export default CharacterCard;
