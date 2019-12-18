@@ -6,7 +6,6 @@ import CharacterCard from "./components/CharacterCard";
 import characters from "./characters.json";
 
 class App extends Component {
-	// Setting this.state.characters to the characters json array
 	state = {
 		characters,
 		clickedArray: [],
@@ -16,11 +15,9 @@ class App extends Component {
 		shakeit: "false"
 	};
 
-	clickPicture = id => {
-		// Arrange the pictures in a random manner
+	clickCharacter = id => {
 		const shuffledArray = this.shuffleArray(characters);
 		this.setState({ characters: shuffledArray });
-		// if clicked an image already clicked set this.state.score = 0; empty clickeadArray, end of if block
 		if (this.state.clickedArray.includes(id)) {
 			this.setState({ score: 0, clickedArray: [], message: "Incorrect, Game Over! Click an image to start again!", shakeit: "true" });
 		}
@@ -32,11 +29,9 @@ class App extends Component {
 				shakeit: "false"
 			});
 		}
-		// set topscore = score if score>topscore.
 		if (this.state.score > this.state.topScore) {
 			this.setState({ topScore: this.state.score });
 		}
-		// shake the wrapper if shakeit is set to true
 	}
 	shuffleArray = (picturesArray) => {
 		for (let i = picturesArray.length - 1; i > 0; i--) {
@@ -53,26 +48,26 @@ class App extends Component {
 					<h1 className="App-title">Welcome to React Clicky Game!!</h1>
 				</header>
 				<h3 className="App-intro">
-					<strong>Click on an image to earn points, but don't click on any, more than once!</strong>
+					<p>Click on one character to begin. Remember who you click and try to get all 12 characters in a row without repeating a pick. Your high score will be logged.</p>
 					<p className="score"><strong>Score: {this.state.score} | TopScore: {this.state.topScore}</strong></p>
 					<p className="message"><strong>{this.state.message}</strong></p>
 				</h3>
 				<Wrapper
 					shakeWrapper={this.state.shakeit}
 					pictures=
-					{this.state.characters.map(picture => (
+					{this.state.characters.map(item => (
 						<CharacterCard
-							clickPicture={this.clickPicture}
-							id={picture.id}
-							key={picture.id} // to get rid of unique key prop warning
-							name={picture.name}
-							image={picture.image}
+							key={item.id}
+							id={item.id}
+							clickCharacter={this.clickCharacter}
+							name={item.name}
+							image={item.image}
 						/>
 					))}
 				/>
 			</div>
 		);
 	}
-	
+
 }
 export default App;
