@@ -6,7 +6,7 @@
     width: 150px;
     margin: 10px;
     position: relative;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    box-shadow: 0 3px 6px black, 0 3px 6px black;
   }
   
   .card > .img-container {
@@ -23,7 +23,7 @@
   }
 
   .img-thumbnail:hover {
-    background-color: red;
+    background-color: #33E3FF;
     opacity: 0.5;
     }
 .img-container:hover{

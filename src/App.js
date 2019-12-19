@@ -42,7 +42,13 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<h3 className="directions text-white">
+				<header>
+					<div className="jumbotron">
+						<h2>GAME OF THRONES MEMORY GAME</h2>
+					</div>
+				
+				</header>
+				<h3 className="directions text-white col-sm-10 offset-1">
 					<p>Click on one character to begin. Remember who you click and try to get all 12 characters in a row without repeating a pick. Your high score will be logged.</p>
 					<p className="score"><strong>Score: {this.state.score} | High Score: {this.state.topScore}</strong></p>
 					<p className="message"><strong>{this.state.message}</strong></p>
