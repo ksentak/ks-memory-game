@@ -18,7 +18,7 @@ class App extends Component {
 		const shuffledArray = this.shuffleArray(characters);
 		this.setState({ characters: shuffledArray });
 		if (this.state.clickedArray.includes(id)) {
-			this.setState({ score: 0, clickedArray: [], message: "Incorrect, Game Over! Click an image to start again!", cardWaggle: "true" });
+			this.setState({ score: 0, clickedArray: [], message: "Game Over! Click an image to play again!", cardWaggle: "true" });
 		}
 		else {
 			this.setState({
@@ -50,7 +50,7 @@ class App extends Component {
 				</header>
 				<h3 className="directions text-white text-center col-sm-10 offset-1">
 					<p>Click on one character to begin. Remember who you click and try to get all 12 characters in a row without repeating a pick. Your high score will be logged.</p>
-					<p className="score"><strong>Score: {this.state.score} | High Score: {this.state.topScore}</strong></p>
+					<p className="score">Score: {this.state.score} | High Score: {this.state.topScore}</p>
 					<p className="message"><strong>{this.state.message}</strong></p>
 				</h3>
 				<Wrapper
