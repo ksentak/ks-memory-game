@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ks-memory-game/static/css/main.5539025f.chunk.css",
+    "main.js": "/ks-memory-game/static/js/main.8090b101.chunk.js",
+    "main.js.map": "/ks-memory-game/static/js/main.8090b101.chunk.js.map",
+    "runtime-main.js": "/ks-memory-game/static/js/runtime-main.5ae4336c.js",
+    "runtime-main.js.map": "/ks-memory-game/static/js/runtime-main.5ae4336c.js.map",
+    "static/js/2.87d9fc73.chunk.js": "/ks-memory-game/static/js/2.87d9fc73.chunk.js",
+    "static/js/2.87d9fc73.chunk.js.map": "/ks-memory-game/static/js/2.87d9fc73.chunk.js.map",
+    "index.html": "/ks-memory-game/index.html",
+    "precache-manifest.66080973a6e0368ff54704cbbaaa685d.js": "/ks-memory-game/precache-manifest.66080973a6e0368ff54704cbbaaa685d.js",
+    "service-worker.js": "/ks-memory-game/service-worker.js",
+    "static/css/main.5539025f.chunk.css.map": "/ks-memory-game/static/css/main.5539025f.chunk.css.map",
+    "static/js/2.87d9fc73.chunk.js.LICENSE": "/ks-memory-game/static/js/2.87d9fc73.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ae4336c.js",
+    "static/js/2.87d9fc73.chunk.js",
+    "static/css/main.5539025f.chunk.css",
+    "static/js/main.8090b101.chunk.js"
+  ]
+}
